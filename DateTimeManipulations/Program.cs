@@ -4,8 +4,10 @@
 using System.Globalization;
 
 DateTime date = new DateTime();
+Console.WriteLine("date is: " + date);
 
 // Create a DateTime from date and time
+DateTime dateOfBirthWithHours = new DateTime(1980, 12, 31, 8, 5,3);
 DateTime dateOfBirth = new DateTime(1980, 12, 31);
 Console.WriteLine("My Dob is: " + dateOfBirth);
 Console.WriteLine("My Dob is: " + dateOfBirth.Date);
@@ -13,6 +15,9 @@ Console.WriteLine("My Dob is: " + dateOfBirth.Date);
 Console.WriteLine("Day of Week:{0}", dateOfBirth.DayOfWeek);
 Console.WriteLine("Day of Year: {0}", dateOfBirth.DayOfYear);
 Console.WriteLine("Time of Day:{0}", dateOfBirth.TimeOfDay);
+Console.WriteLine("Hour:{0}", dateOfBirthWithHours.Hour);
+Console.WriteLine("Minutes: {0}", dateOfBirthWithHours.Minute);
+Console.WriteLine("Seconds:{0}", dateOfBirthWithHours.Second);
 Console.WriteLine("Tick:{0}", dateOfBirth.Ticks);
 Console.WriteLine("Kind:{0}", dateOfBirth.Kind);
 
