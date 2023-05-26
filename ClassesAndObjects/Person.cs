@@ -10,21 +10,21 @@
 public class Person
 {
     // Properties when public
-    public string FirstName { get; set; }
-    public string LastName { get; set; }
+    public string? FirstName { get; set; }
+    public string? LastName { get; set; }
     public int Age { get; set; }
 
     // Fields
-    private double _salary { get; set; }
+    private double Salary { get; set; }
 
     public void setSalary(double salary)
     {
-        _salary = salary;
+        Salary = salary;
     }
 
     public double getSalary()
     {
-        return _salary;
+        return Salary;
     }
 
     public string getFullName()

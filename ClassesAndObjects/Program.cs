@@ -15,7 +15,9 @@ Console.WriteLine("Enter Salary:");
 int salary = Convert.ToInt32(Console.ReadLine());
 
 Console.WriteLine("Enter MiddleName:");
+#pragma warning disable CS8600 // Converting null literal or possible null value to non-nullable type.
 middleName = Console.ReadLine();
+#pragma warning restore CS8600 // Converting null literal or possible null value to non-nullable type.
 
 if (string.IsNullOrEmpty(middleName))
 {
