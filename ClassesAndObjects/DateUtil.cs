@@ -15,10 +15,12 @@ internal static class DateUtil
 
     public static int Age(DateTime dateOfBirth)
     {
-        if (dateOfBirth == null)
-            return 0;
+        if (dateOfBirth != null)
+            return DateTime.Now.Year - dateOfBirth.Year;
+            
+        return 0;
 
-        return DateTime.Now.Year - dateOfBirth.Year;
+        
     }
 }
 
